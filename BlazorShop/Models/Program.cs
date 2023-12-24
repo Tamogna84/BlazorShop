@@ -1,5 +1,5 @@
-using BlazorShop;
 using BlazorShop.Data;
+using BlazorShop.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
