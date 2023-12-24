@@ -1,0 +1,76 @@
+﻿@page "/"
+@implements IDisposable
+
+<PageTitle>Index</PageTitle>
+
+<h1>“Добро пожаловать"</h1>
+
+<p>
+	Интернет магазин CustomS Machines”
+</p>
+
+<h3>Текущее время:</h3>
+
+<p>@_now.ToString("F")</p>
+
+<p>
+	Текущее время: @_now
+</p>
+
+@code {
+	private DateTime _now;
+	private PeriodicTimer _timer;
+	// код из телеграмм
+
+	// protected override void OnInitialized()
+	// {
+	// 	now = DateTime.Now;
+	// 	var interval = TimeSpan.FromSeconds(1);
+	// 	_ = SetInterval(UpdateCurrentTime, interval);
+	// }
+
+	// private void UpdateCurrentTime()
+	// {
+	// 	now = DateTime.Now;
+	// 	StateHasChanged();
+	// }
+
+	// private async Task SetInterval(Action action, TimeSpan timeout)
+	// {
+	// 	while (true)
+	// 	{
+	// 		action();
+	// 		await Task.Delay(timeout);
+	// 	}
+	// }
+
+
+
+
+	// код на занятии
+	
+	protected override async void OnInitialized()
+	{
+		base.OnInitialized();
+		_now = DateTime.Now;
+		_ = RunDateTimeLiveUpdates();
+	}
+
+	async Task RunDateTimeLiveUpdates()
+	{
+		_timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+		while (await _timer.WaitForNextTickAsync())
+		{
+			_now = DateTime.Now;
+			StateHasChanged();
+		}
+	}
+	public void Dispose()
+	{
+		_timer?.Dispose();
+	}
+}
+
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />

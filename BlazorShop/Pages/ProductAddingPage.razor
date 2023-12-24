@@ -1,0 +1,34 @@
+﻿@page "/add_product" 
+@inject Catalog Catalog
+
+<h3>Добавление товара</h3> 
+
+<EditForm Model="_newProduct" OnValidSubmit="AddProduct">    
+    <DataAnnotationsValidator /> 
+
+    <div class="form-group">
+        <label for="productName">Название товара:</label>
+        <InputText class="form-control" id="productName" @bind-Value="_newProduct.Name" /> 
+        <ValidationMessage For="@(() => _newProduct.Name)" /> 
+    </div>
+
+    <div class="form-group">
+        <label for="productPrice">Цена товара:</label>
+        <InputNumber type="number" class="form-control" id="productPrice" @bind-Value="_newProduct.Price" /> 
+        <ValidationMessage For="@(() => _newProduct.Price)" /> 
+    </div>
+
+    <button type="submit" class="btn btn-primary">Добавить товар</button>
+    <ValidationSummary /> 
+</EditForm>
+
+@code {
+    private Product _newProduct = new Product(); // Создание экземпляра класса Product для нового товара
+
+    public void AddProduct() // Метод для добавления товара
+    {
+        Catalog.AddProduct(_newProduct); // Использование метода AddProduct из класса Catalog для добавления нового товара
+        _newProduct = new Product(); // Очищаем форму после добавления товара путем создания нового экземпляра продукта
+    }
+}
+
