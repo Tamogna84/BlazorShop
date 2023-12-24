@@ -12,10 +12,7 @@
 		{
 			return _product.ToArray();
 		}
-        //public void AddProduct (Product product)
-        //{
-        //	_product.Add(product);
-        //}
+       
 
         public void AddProduct(Product product)
         {
