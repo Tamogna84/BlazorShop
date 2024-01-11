@@ -1,11 +1,14 @@
 ﻿@page "/products"
 @using BlazorShop.Models
-@inject Catalog Catalog
+@using BlazorShop.Services
+
+@inject ProductService Catalog
+
 <h3>Список товаров</h3>
 
 @foreach (var product in Catalog.GetProducts())
 {
 	<p>
-		@product.Id: @product.Name @product.Price.ToString("C")
+		@product.Id: Наименование: "@product.Name"   Цена: @product.Price руб.
 	</p>
 }

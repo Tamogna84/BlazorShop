@@ -1,14 +1,15 @@
 ﻿@page "/add_product" 
+@using BlazorShop.Data
 @using BlazorShop.Models
-@inject Catalog Catalog
+@inject IProductRepository Catalog
 
 <h3>Добавление товара</h3> 
 
 <EditForm Model="_newProduct" OnValidSubmit="AddProduct">    
     <DataAnnotationsValidator />
 	
-    <InputText @bind-Value="_newProduct.Name" />
-    <InputNumber @bind-Value="_newProduct.Price" /> 
+    Наименование товара: <InputText @bind-Value="_newProduct.Name" /> <br><br>
+    Цена товара: <InputNumber @bind-Value="_newProduct.Price" /> <br><br>
 
     <button type="submit" class="btn btn-primary">Добавить товар</button>
     <ValidationSummary /> 

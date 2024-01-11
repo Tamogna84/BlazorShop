@@ -1,7 +1,9 @@
 using BlazorShop.Data;
-using BlazorShop.Models;
+using BlazorShop.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddSingleton<Catalog>();
+
+
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<IProductRepository, InDbSQLiteCatalog>();             //      InMemoryCatalog>();  InDbSQLiteCatalog                          
+
+var dbPath = "BlazorShopDb.db";
+builder.Services.AddDbContext<AppDbContext>(
+   options => options.UseSqlite($"Data Source={dbPath}"));
+
+
+builder.Services.AddTransient<ServerStartupEmailService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
+
 
 var app = builder.Build();
 
@@ -29,7 +43,5 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-
-
 
 app.Run();
