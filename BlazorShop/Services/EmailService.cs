@@ -5,8 +5,8 @@ using BlazorShop.Data;
 
 namespace BlazorShop.Services
 {
-	public class EmailService : IEmailService
-	{
+    public class EmailService : IEmailService  // Заменил на SmtpMailSender
+    {
 		private string smtpServer = Environment.GetEnvironmentVariable("smtp-server");				
 		private string emailLogin = Environment.GetEnvironmentVariable("email_login");
 		private string emailPassword = Environment.GetEnvironmentVariable("email_password");
@@ -20,14 +20,14 @@ namespace BlazorShop.Services
 
 			emailMessage.To.Add(new MailboxAddress("Alexander", email));
 			emailMessage.Subject = subject;
-			emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
+			emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text)
 			{
 				Text = message
 			};
 
 			using (var client = new SmtpClient())
 			{
-				await client.ConnectAsync(smtpServer, 25);
+				await client.ConnectAsync(smtpServer, 25, false);
 				await client.AuthenticateAsync(emailLogin, emailPassword);
 				await client.SendAsync(emailMessage);
 

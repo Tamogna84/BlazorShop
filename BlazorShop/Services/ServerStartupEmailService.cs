@@ -7,9 +7,9 @@ namespace BlazorShop.Services
 	{
 		private readonly IEmailService _emailService;
 
-		readonly string Email = Environment.GetEnvironmentVariable("MainEmail");
+		//readonly string Email = Environment.GetEnvironmentVariable("MainEmail"); // Переменная среды
 
-		//private string Email = "naumov84alex@gmail.com";
+		private readonly IConfiguration _config;
 
 		public ServerStartupEmailService(IEmailService emailService)
 		{
@@ -18,6 +18,7 @@ namespace BlazorShop.Services
 
 		public async Task SendServerStartupMessage()
 		{
+			var Email = _config["SmtpConfig:Email"];
 			await _emailService.SendEmailAsync(Email, "Server Started", "Сервер запущен. Сообщение отправлено.");
 		}
 	}

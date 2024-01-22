@@ -1,4 +1,6 @@
 ﻿@page "/counter"
+@using BlazorShop.Data
+@inject NowTime Time
 
 <PageTitle>Counter</PageTitle>
 
@@ -7,6 +9,14 @@
 <p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+
+<h3>TimeViewer</h3>
+
+<p>Вывод времени с помощью абстракции IClock:</p>
+
+
+<p>вывод времени: @Time.GetTime()</p>
 
 @code {
     private int currentCount = 0;

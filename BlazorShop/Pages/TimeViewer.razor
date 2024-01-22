@@ -1,25 +1,7 @@
-﻿@page "/"
+﻿@page "/timeviewer"
+
 @using BlazorShop.Data
-@implements IDisposable
 @inject NowTime Time
-
-
-
-<PageTitle>Index</PageTitle>
-
-<h1>“Добро пожаловать"</h1>
-
-<p>
-	Интернет магазин CustomS Machines”
-</p>
-
-<h3>Текущее время:</h3>
-
-<p>@_now.ToString("F")</p>
-
-<p>
-	Текущее время: @_now
-</p>
 
 <h3>TimeViewer</h3>
 
@@ -27,19 +9,13 @@
 
 
 <p>вывод времени: @Time.GetTime()</p>
-
 @code {
-	private DateTime _now;
+	// следующий блок позволяет обновляться времени в реальном времени
 	private PeriodicTimer _timer;
 
-	private IClock _nowTime;
-
-	
-	
 	protected override async void OnInitialized()
 	{
-		base.OnInitialized();
-		_now = DateTime.Now;		
+		base.OnInitialized();		
 		_ = RunDateTimeLiveUpdates();
 	}
 
@@ -48,7 +24,7 @@
 		_timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
 		while (await _timer.WaitForNextTickAsync())
 		{
-			_now = DateTime.Now;
+			
 			StateHasChanged();
 		}
 	}
@@ -56,8 +32,5 @@
 	{
 		_timer?.Dispose();
 	}
+	// следующий блок позволяет обновляться времени в реальном времени
 }
-
-
-
-<SurveyPrompt Title="How is Blazor working for you?" />

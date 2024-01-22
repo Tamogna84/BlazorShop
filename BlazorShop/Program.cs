@@ -12,17 +12,26 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
+builder.Services.AddScoped<NowTime>();
+
+builder.Services.AddTransient<IClock, NowTime>();
 
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<IProductRepository, InDbSQLiteCatalog>();             //      InMemoryCatalog>();  InDbSQLiteCatalog                          
+
 
 var dbPath = "BlazorShopDb.db";
 builder.Services.AddDbContext<AppDbContext>(
    options => options.UseSqlite($"Data Source={dbPath}"));
 
+// реализация через IOptions
 
-builder.Services.AddTransient<ServerStartupEmailService>();
-builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddOptions<SmtpEmailSenderOptions>()
+   .BindConfiguration("SmtpConfig")
+   .ValidateDataAnnotations()
+   .ValidateOnStart();
+
+builder.Services.AddSingleton<ISmtpMailSender, SmtpMailSender>();
 
 
 var app = builder.Build();

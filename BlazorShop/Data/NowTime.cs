@@ -10,5 +10,14 @@
             DateNow = DateTime.Now;
             DayOfWeek = DateTime.Now.DayOfWeek;
         }
+		public DateTime GetTime()
+		{
+			return DateTime.Now;
+		}
+
+        NowTime IClock.GetTime()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

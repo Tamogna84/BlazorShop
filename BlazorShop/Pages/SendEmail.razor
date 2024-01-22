@@ -1,0 +1,46 @@
+﻿@page "/sendemail"
+
+@using BlazorShop.Data
+@using BlazorShop.Models
+
+@inject ISmtpMailSender SendMailAsync
+@inject ISmtpMailSender SendMessageObject
+@inject IConfiguration _config
+
+<h3>SendEmail</h3>
+
+<EditForm Model="@_emailModel" OnValidSubmit="OnSendMessage">
+	<DataAnnotationsValidator />
+	<ValidationSummary />
+
+	<br />
+	Тема письма:
+	<br />
+	<InputText @bind-Value="_emailModel.subject" />
+	<br />
+	<br />
+	Содержимое письма:
+	<br />
+	<InputTextArea @bind-Value="_emailModel.message" />
+	<br />
+	<br /> <input type="submit" value="Отправить">
+</EditForm>
+<br />
+<br />
+<div>@_sendResult</div>
+
+@code {
+	private SendEmailDataModel _emailModel = new();
+	private string _sendResult = "";
+
+	//readonly string Email = Environment.GetEnvironmentVariable("MainEmail");
+
+	private void OnSendMessage()
+	{
+		var Email = _config["SmtpConfig:Email"];
+		SendMessageObject.SendMailAsync(Email, _emailModel.subject, _emailModel.message);
+		_emailModel = new();
+		_sendResult = $"письмо отправлено. Получатель: {Email}";
+	}
+}
+

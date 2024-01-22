@@ -7,14 +7,15 @@ namespace BlazorShop.Services
     {
         private readonly IProductRepository _productRepository;
 
-        private readonly IClock _nowTime;
-        private readonly DayOfWeek _discountDay;
+		
+		private readonly DateTime _nowTime;
+		private readonly DayOfWeek _discountDay;
 
         public ProductService(IProductRepository catalog)
         {
-            _productRepository = catalog ?? throw new ArgumentNullException(nameof(catalog));
-            _nowTime = new NowTime();
-            _discountDay = DayOfWeek.Sunday; // присвоение дня скидки
+            _productRepository = catalog ?? throw new ArgumentNullException(nameof(catalog));			
+			_nowTime = DateTime.Now;
+			_discountDay = DayOfWeek.Sunday; // присвоение дня скидки
         }
 
         public IReadOnlyCollection<Product> GetProducts()
