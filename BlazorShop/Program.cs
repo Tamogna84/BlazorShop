@@ -38,7 +38,13 @@ builder.Services.AddOptions<SmtpEmailSenderOptions>()
 builder.Services.AddScoped<ISmtpMailSender, SmtpMailSender>();
 
 
-builder.Host.UseSerilog((_, conf) => conf.WriteTo.Console());
+//builder.Host.UseSerilog((_, conf) => conf.WriteTo.Console());
+
+Log.Logger = new LoggerConfiguration()
+	.WriteTo.Console()
+	.WriteTo.File("log.txt")
+	.CreateLogger();
+builder.Services.AddLogging(loggingBuilder => { loggingBuilder.AddSerilog(); });
 
 var app = builder.Build();
 
