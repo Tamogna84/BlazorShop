@@ -4,7 +4,11 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Serilog;
+using System.Text;
 
+
+Console.OutputEncoding = Encoding.UTF8;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -31,8 +35,10 @@ builder.Services.AddOptions<SmtpEmailSenderOptions>()
    .ValidateDataAnnotations()
    .ValidateOnStart();
 
-builder.Services.AddSingleton<ISmtpMailSender, SmtpMailSender>();
+builder.Services.AddScoped<ISmtpMailSender, SmtpMailSender>();
 
+
+builder.Host.UseSerilog((_, conf) => conf.WriteTo.Console());
 
 var app = builder.Build();
 

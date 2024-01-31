@@ -2,10 +2,12 @@
 
 @using BlazorShop.Data
 @using BlazorShop.Models
+@using MailKit
 
 @inject ISmtpMailSender SendMailAsync
 @inject ISmtpMailSender SendMessageObject
 @inject IConfiguration _config
+@inject ILogger<SendEmail> Logger
 
 <h3>SendEmail</h3>
 
@@ -35,12 +37,37 @@
 
 	//readonly string Email = Environment.GetEnvironmentVariable("MainEmail");
 
-	private void OnSendMessage()
+	int _attemptToSend = 0;
+	
+	private async Task OnSendMessage()
 	{
+		_attemptToSend++;
 		var Email = _config["SmtpConfig:Email"];
-		SendMessageObject.SendMailAsync(Email, _emailModel.subject, _emailModel.message);
-		_emailModel = new();
-		_sendResult = $"письмо отправлено. Получатель: {Email}";
+		Logger.LogInformation("Попытка отправки имейла на адрес {Email}", Email);
+
+		try //Вариант 1.
+		{
+			await SendMessageObject.SendMailAsync(Email, _emailModel.subject, _emailModel.message);
+			_emailModel = new();
+			_sendResult = "письмо отправлено";
+		}
+		catch (Exception e) when (_attemptToSend < 3
+										&& e is ServiceNotAuthenticatedException
+										or ServiceNotConnectedException
+										//...
+										)
+		{
+			Logger.LogWarning(e, "Ошибка отправки имейла на адрес {Email}. Делаем еще одну попытку", Email, e.Message);
+			await OnSendMessage(); //retry
+		}
+		catch (Exception e) // Если это последняя попытка, то логируем ошибку и выводим сообщение об ошибке.
+		{
+			// Даем разработчику явно понять, что произошла ошибка, и что нужно что-то делать.
+			Logger.LogError(e, "Ошибка отправки имейла на адрес {Email}. Ошибка: {Error}", Email, e.Message);
+			_sendResult = "Ошибка отправки письма";
+		}
 	}
+
+
 }
 

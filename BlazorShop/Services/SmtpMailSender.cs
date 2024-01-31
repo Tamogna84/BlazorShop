@@ -6,8 +6,8 @@ using MimeKit;
 
 namespace BlazorShop.Services
 {
-    public class SmtpMailSender : ISmtpMailSender
-    {
+	public class SmtpMailSender : ISmtpMailSender, IAsyncDisposable
+	{
 		///    Пример испольлования IOptions
 
 		//private readonly SmtpEmailSenderOptions _options;
@@ -40,21 +40,27 @@ namespace BlazorShop.Services
 
 		///    Пример испольлования User Secrets
 		///    
+		private readonly SmtpClient _client = new();
+		
 		private readonly IConfiguration _config;
 
-        public SmtpMailSender(IConfiguration config)
-        {
-            _config = config;
+
+		private readonly ILogger<SmtpMailSender> _logger;
+
+		public SmtpMailSender(IConfiguration config, ILogger<SmtpMailSender> logger)
+		{
+			_config = config ?? throw new ArgumentNullException(nameof(config));
+			_logger = logger ?? throw new ArgumentNullException(nameof(logger));
 		}
 
-        public async Task SendMailAsync(string to, string subject, string body)
+		public async Task SendMailAsync(string to, string subject, string body)
 		{
-			var message = new MimeMessage();
+			_logger.LogInformation("Sending email to {Email} with subject {Subject}", to, subject);
 
-			var SmtpServer = _config["SmtpConfig:SmtpServer"];
-			var Port = Convert.ToInt32(_config["SmtpConfig:Port"]);
+			var message = new MimeMessage();
+			
 			var Username = _config["SmtpConfig:Username"];
-			var Password = _config["SmtpConfig:Password"];
+			
 			message.From.Add(new MailboxAddress("Server Notification", Username));
 			message.To.Add(new MailboxAddress("Alexander", to));
 			message.Subject = subject;
@@ -64,13 +70,30 @@ namespace BlazorShop.Services
 				Text = body
 			};
 
-			using (var client = new SmtpClient())
+			await EnsureConnectedAndAuthed();
+			await _client.SendAsync(message);
+		}
+		private async Task EnsureConnectedAndAuthed()
+		{
+			var SmtpServer = _config["SmtpConfig:SmtpServer"];
+			var Port = Convert.ToInt32(_config["SmtpConfig:Port"]);
+			var Username = _config["SmtpConfig:Username"];
+			var Password = _config["SmtpConfig:Password"];
+			if (!_client.IsConnected)
 			{
-				await client.ConnectAsync(SmtpServer, Port, false);
-				await client.AuthenticateAsync(Username, Password);
-				await client.SendAsync(message);
-				await client.DisconnectAsync(true);
+				await _client.ConnectAsync(SmtpServer, Port, false);
 			}
+			if (!_client.IsAuthenticated)
+			{
+				await _client.AuthenticateAsync(Username, Password);
+			}
+		}
+
+		// Вызовет DI контейнер, который вызовет DisposeAsync
+		public async ValueTask DisposeAsync()
+		{
+			await _client.DisconnectAsync(true);
+			_client.Dispose();
 		}
 
 	}
