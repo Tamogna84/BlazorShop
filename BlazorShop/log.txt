@@ -1,0 +1,590 @@
+2024-01-31 21:41:22.986 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 21:41:23.771 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 21:41:23.773 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 21:41:23.776 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 21:41:23.778 +05:00 [INF] Hosting environment: Development
+2024-01-31 21:41:23.779 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 21:41:27.079 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 21:41:27.271 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 21:41:27.323 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 21:41:27.336 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 21:41:27.342 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 21:41:27.479 +05:00 [INF] Executed page /_Host in 141.0758ms
+2024-01-31 21:41:27.487 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 21:41:27.487 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 21:41:27.487 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 21:41:27.488 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 21:41:27.492 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 21:41:27.493 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 6.1654ms
+2024-01-31 21:41:27.511 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 21:41:27.518 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 444.0487ms
+2024-01-31 21:41:27.521 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 21:41:27.523 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 36.4769ms
+2024-01-31 21:41:27.534 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 21:41:27.537 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 21:41:27.539 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 21:41:27.541 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 7.5917ms
+2024-01-31 21:41:27.544 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.3018ms
+2024-01-31 21:41:27.546 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 21:41:27.548 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 21:41:27.554 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 21:41:27.555 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.0515ms
+2024-01-31 21:41:27.563 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=2N9piiGIBa2pkbLCxCAUzw - null null
+2024-01-31 21:41:27.566 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 21:41:31.356 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 21:45:51.871 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 21:45:52.185 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 21:45:52.187 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 21:45:52.190 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 21:45:52.192 +05:00 [INF] Hosting environment: Development
+2024-01-31 21:45:52.194 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 21:45:52.628 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 21:45:52.729 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 21:45:52.746 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 21:45:52.759 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 21:45:52.761 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 21:45:52.932 +05:00 [INF] Executed page /_Host in 182.0757ms
+2024-01-31 21:45:52.939 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 21:45:52.940 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 21:45:52.952 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 21:45:52.957 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 21:45:52.967 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 21:45:52.979 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 21:45:52.979 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 39.0066ms
+2024-01-31 21:45:52.981 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 355.0548ms
+2024-01-31 21:45:52.981 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 21:45:52.987 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 48.1408ms
+2024-01-31 21:45:53.012 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 21:45:53.015 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.288ms
+2024-01-31 21:45:53.017 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 21:45:53.021 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 21:45:53.022 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 11.0159ms
+2024-01-31 21:45:53.040 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 21:45:53.043 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 21:45:53.049 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 21:45:53.050 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.5015ms
+2024-01-31 21:45:53.054 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=D2FkVQUV4U1VJ9tJwRtuug - null null
+2024-01-31 21:45:53.055 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 21:45:55.452 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 21:46:02.972 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryD9sNEfP6maZqcHth 359
+2024-01-31 21:46:02.980 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 21:46:03.001 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 21:46:03.004 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=D2FkVQUV4U1VJ9tJwRtuug - 200 null null 9950.0606ms
+2024-01-31 21:46:03.005 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 21:46:03.007 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 35.8968ms
+2024-01-31 21:47:03.342 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 21:47:03.572 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 21:47:03.575 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 21:47:03.580 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 21:47:03.582 +05:00 [INF] Hosting environment: Development
+2024-01-31 21:47:03.583 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 21:47:06.652 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 21:47:06.741 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 21:47:06.759 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 21:47:06.767 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 21:47:06.769 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 21:47:06.892 +05:00 [INF] Executed page /_Host in 128.0732ms
+2024-01-31 21:47:06.893 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 21:47:06.893 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 21:47:06.896 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 21:47:06.899 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 21:47:06.907 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 21:47:06.911 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 14.1302ms
+2024-01-31 21:47:06.914 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 21:47:06.919 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 271.755ms
+2024-01-31 21:47:06.919 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 21:47:06.924 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 31.4217ms
+2024-01-31 21:47:06.939 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 21:47:06.940 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.5828ms
+2024-01-31 21:47:06.942 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 21:47:06.945 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 21:47:06.946 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 7.3058ms
+2024-01-31 21:47:06.955 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 21:47:06.958 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 21:47:06.964 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 21:47:06.965 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.9971ms
+2024-01-31 21:47:06.968 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=UCp_VtU8Luf41wKZfZ0EkQ - null null
+2024-01-31 21:47:06.970 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 21:47:08.917 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 21:47:08.959 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/image/book - null null
+2024-01-31 21:47:08.961 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 21:47:08.966 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 21:47:08.968 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 21:47:08.969 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 21:47:08.978 +05:00 [INF] Executed page /_Host in 10.9208ms
+2024-01-31 21:47:08.978 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 21:47:08.979 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/image/book - 200 null text/html; charset=utf-8 20.2036ms
+2024-01-31 21:47:13.872 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary8wNWYZn6f5vi6g35 359
+2024-01-31 21:47:13.882 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 21:47:13.907 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 21:47:13.909 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=UCp_VtU8Luf41wKZfZ0EkQ - 200 null null 6940.5578ms
+2024-01-31 21:47:13.914 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 21:47:13.916 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 44.3341ms
+2024-01-31 22:08:02.885 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:08:03.095 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:08:03.096 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:08:03.100 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:08:03.101 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:08:03.102 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:08:06.032 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:08:06.112 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:08:06.127 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:08:06.136 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:08:06.138 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:08:06.254 +05:00 [INF] Executed page /_Host in 122.3918ms
+2024-01-31 22:08:06.256 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:08:06.256 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:08:06.256 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:08:06.264 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:08:06.266 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:08:06.275 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 19.6851ms
+2024-01-31 22:08:06.278 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:08:06.275 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 242.2852ms
+2024-01-31 22:08:06.284 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:08:06.287 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 31.022ms
+2024-01-31 22:08:06.295 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:08:06.299 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.1027ms
+2024-01-31 22:08:06.302 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:08:06.305 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:08:06.306 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 11.0936ms
+2024-01-31 22:08:06.314 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:08:06.317 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:08:06.323 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:08:06.324 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.6925ms
+2024-01-31 22:08:06.327 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=DnNorScv6y-0BcQupYku2w - null null
+2024-01-31 22:08:06.330 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:08:09.095 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:08:14.724 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarypQF9pbuyJ6z6d3AZ 359
+2024-01-31 22:08:14.727 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:08:14.739 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:08:14.741 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=DnNorScv6y-0BcQupYku2w - 200 null null 8413.967ms
+2024-01-31 22:08:14.743 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:08:14.744 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 20.3671ms
+2024-01-31 22:17:01.948 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:17:02.153 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:17:02.155 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:17:02.158 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:17:02.160 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:17:02.161 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:17:05.220 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:17:05.303 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:17:05.317 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:17:05.326 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:17:05.329 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:17:05.426 +05:00 [INF] Executed page /_Host in 105.3168ms
+2024-01-31 22:17:05.427 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:17:05.427 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:17:05.434 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:17:05.438 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:17:05.433 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:17:05.446 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 18.9693ms
+2024-01-31 22:17:05.448 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:17:05.449 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 231.9493ms
+2024-01-31 22:17:05.455 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:17:05.463 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 36.5522ms
+2024-01-31 22:17:05.472 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:17:05.473 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.6992ms
+2024-01-31 22:17:05.476 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:17:05.480 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:17:05.481 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 8.7948ms
+2024-01-31 22:17:05.489 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:17:05.492 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:17:05.499 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:17:05.500 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.2725ms
+2024-01-31 22:17:05.502 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=caNrgBaZqJmHPziSFkHpMA - null null
+2024-01-31 22:17:05.504 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:17:07.480 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:17:13.884 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryeuVP9YPwBJIPTKWy 359
+2024-01-31 22:17:13.887 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:17:13.910 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:17:13.912 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=caNrgBaZqJmHPziSFkHpMA - 200 null null 8409.7734ms
+2024-01-31 22:17:13.918 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:17:13.921 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 36.9859ms
+2024-01-31 22:39:36.744 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:39:36.985 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:39:36.987 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:39:36.990 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:39:36.991 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:39:36.993 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:39:40.496 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:39:40.626 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:39:40.647 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:39:40.660 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:39:40.661 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:39:40.826 +05:00 [INF] Executed page /_Host in 168.4596ms
+2024-01-31 22:39:40.826 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:39:40.826 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:39:40.826 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:39:40.828 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:39:40.839 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:39:40.859 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 32.6984ms
+2024-01-31 22:39:40.860 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:39:40.863 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 370.9046ms
+2024-01-31 22:39:40.865 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:39:40.867 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 41.4211ms
+2024-01-31 22:39:40.878 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:39:40.881 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:39:40.885 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:39:40.886 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 8.4272ms
+2024-01-31 22:39:40.892 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:39:40.894 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:39:40.902 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.8195ms
+2024-01-31 22:39:40.905 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:39:40.906 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 14.0759ms
+2024-01-31 22:39:40.931 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=p1-oXeV0u9DcMH2bFW21Nw - null null
+2024-01-31 22:39:40.934 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:39:43.130 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:39:43.162 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/book.jpeg - null null
+2024-01-31 22:39:43.172 +05:00 [INF] Sending file. Request path: '/book.jpeg'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\book.jpeg'
+2024-01-31 22:39:43.173 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/book.jpeg - 200 10844 image/jpeg 11.2498ms
+2024-01-31 22:39:49.934 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary0q6nS5FVCs01jWiW 359
+2024-01-31 22:39:49.937 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:39:49.949 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:39:49.950 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=p1-oXeV0u9DcMH2bFW21Nw - 200 null null 9019.8998ms
+2024-01-31 22:39:49.953 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:39:49.954 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 20.5821ms
+2024-01-31 22:40:23.818 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:40:24.034 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:40:24.036 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:40:24.039 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:40:24.041 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:40:24.043 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:40:27.055 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:40:27.135 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:40:27.147 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:40:27.155 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:40:27.157 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:40:27.269 +05:00 [INF] Executed page /_Host in 116.4335ms
+2024-01-31 22:40:27.271 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:40:27.272 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:40:27.272 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:40:27.277 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:40:27.283 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:40:27.294 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 242.6762ms
+2024-01-31 22:40:27.294 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.8174ms
+2024-01-31 22:40:27.297 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:40:27.304 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:40:27.305 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 33.773ms
+2024-01-31 22:40:27.319 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:40:27.322 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.3846ms
+2024-01-31 22:40:27.324 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:40:27.327 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:40:27.328 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 9.3112ms
+2024-01-31 22:40:27.337 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:40:27.340 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:40:27.346 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:40:27.347 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.5744ms
+2024-01-31 22:40:27.358 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=02Mk5XQ7vHYReIK-tZI8cQ - null null
+2024-01-31 22:40:27.361 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:40:29.661 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:40:37.985 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryabzabxLBocV1pttP 359
+2024-01-31 22:40:37.989 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:40:38.009 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:40:38.010 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=02Mk5XQ7vHYReIK-tZI8cQ - 200 null null 10651.964ms
+2024-01-31 22:40:38.017 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:40:38.019 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 34.479ms
+2024-01-31 22:45:34.158 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:45:34.373 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:45:34.375 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:45:34.379 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:45:34.381 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:45:34.383 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:45:37.469 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:45:37.543 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:45:37.555 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:45:37.565 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:45:37.567 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:45:37.668 +05:00 [INF] Executed page /_Host in 110.1496ms
+2024-01-31 22:45:37.670 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:45:37.671 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:45:37.671 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:45:37.680 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:45:37.683 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:45:37.688 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 222.3122ms
+2024-01-31 22:45:37.696 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 24.5077ms
+2024-01-31 22:45:37.698 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:45:37.709 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:45:37.710 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 39.3487ms
+2024-01-31 22:45:37.719 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:45:37.724 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:45:37.724 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.4292ms
+2024-01-31 22:45:37.727 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:45:37.729 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 10.2587ms
+2024-01-31 22:45:37.739 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:45:37.743 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:45:37.748 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:45:37.749 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.7856ms
+2024-01-31 22:45:37.759 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=JgnWMCPaOeql_0UTBvJmlg - null null
+2024-01-31 22:45:37.761 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:45:39.787 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:45:39.821 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/book.jpeg - null null
+2024-01-31 22:45:39.824 +05:00 [INF] The file /book.jpeg was not modified
+2024-01-31 22:45:39.826 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/book.jpeg - 304 null image/jpeg 4.7074ms
+2024-01-31 22:45:52.806 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary4SV5p9z0NP4TtGtg 359
+2024-01-31 22:45:52.810 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:45:52.832 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:45:52.834 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=JgnWMCPaOeql_0UTBvJmlg - 200 null null 15075.491ms
+2024-01-31 22:45:52.839 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:45:52.841 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 34.6616ms
+2024-01-31 22:48:05.811 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:48:06.019 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:48:06.021 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:48:06.025 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:48:06.026 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:48:06.028 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:48:09.128 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:48:09.201 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:48:09.214 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:48:09.222 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:48:09.223 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:48:09.316 +05:00 [INF] Executed page /_Host in 99.0043ms
+2024-01-31 22:48:09.319 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:48:09.324 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:48:09.320 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:48:09.320 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:48:09.337 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 17.7586ms
+2024-01-31 22:48:09.344 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:48:09.352 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 227.3285ms
+2024-01-31 22:48:09.370 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.9582ms
+2024-01-31 22:48:09.371 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:48:09.375 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:48:09.376 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 56.733ms
+2024-01-31 22:48:09.384 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:48:09.387 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:48:09.390 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:48:09.391 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 6.8642ms
+2024-01-31 22:48:09.400 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:48:09.403 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:48:09.408 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:48:09.409 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.9541ms
+2024-01-31 22:48:09.413 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=dc8Xdv2ZLqpk9mZJbA9IsQ - null null
+2024-01-31 22:48:09.415 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:48:11.205 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:48:13.962 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:48:24.213 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:48:28.527 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryKVf3FWqOxHBd3XA6 359
+2024-01-31 22:48:28.530 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:48:28.541 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:48:28.542 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=dc8Xdv2ZLqpk9mZJbA9IsQ - 200 null null 19129.3538ms
+2024-01-31 22:48:28.546 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:48:28.547 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 20.3636ms
+2024-01-31 22:50:05.195 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:50:05.412 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:50:05.420 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:50:05.424 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:50:05.425 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:50:05.427 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:50:08.476 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:50:08.548 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:50:08.561 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:50:08.569 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:50:08.571 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:50:08.682 +05:00 [INF] Executed page /_Host in 116.6092ms
+2024-01-31 22:50:08.683 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:50:08.683 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:50:08.683 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:50:08.691 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:50:08.693 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:50:08.705 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 22.3734ms
+2024-01-31 22:50:08.707 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 235.536ms
+2024-01-31 22:50:08.707 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:50:08.717 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:50:08.718 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 35.512ms
+2024-01-31 22:50:08.729 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:50:08.732 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.5387ms
+2024-01-31 22:50:08.734 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:50:08.738 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:50:08.739 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 9.9821ms
+2024-01-31 22:50:08.747 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:50:08.749 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:50:08.755 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:50:08.756 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.8038ms
+2024-01-31 22:50:08.759 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=VLiVTNQJkgRBr1t54fDkGA - null null
+2024-01-31 22:50:08.761 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:50:10.247 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:50:12.722 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary8swDhORGqk5GLk0P 359
+2024-01-31 22:50:12.725 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:50:12.748 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:50:12.751 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=VLiVTNQJkgRBr1t54fDkGA - 200 null null 3991.9385ms
+2024-01-31 22:50:12.755 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:50:12.759 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 38.0921ms
+2024-01-31 22:54:04.715 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:54:04.924 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:54:04.926 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:54:04.929 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:54:04.931 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:54:04.933 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:54:08.227 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:54:08.302 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:54:08.314 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:54:08.322 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:54:08.323 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:54:08.432 +05:00 [INF] Executed page /_Host in 113.5398ms
+2024-01-31 22:54:08.433 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:54:08.433 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:54:08.434 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:54:08.433 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:54:08.445 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:54:08.445 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 11.7449ms
+2024-01-31 22:54:08.449 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:54:08.449 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 226.0899ms
+2024-01-31 22:54:08.450 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:54:08.455 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 22.2877ms
+2024-01-31 22:54:08.469 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:54:08.472 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.9243ms
+2024-01-31 22:54:08.473 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:54:08.478 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:54:08.479 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 9.9616ms
+2024-01-31 22:54:08.488 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:54:08.490 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:54:08.496 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:54:08.498 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.1127ms
+2024-01-31 22:54:08.506 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=mMBcWngz40p0AbCLtyxGaw - null null
+2024-01-31 22:54:08.509 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:54:10.577 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:54:10.608 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/book.jpeg - null null
+2024-01-31 22:54:10.611 +05:00 [INF] The file /book.jpeg was not modified
+2024-01-31 22:54:10.616 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/book.jpeg - 304 null image/jpeg 7.6877ms
+2024-01-31 22:54:13.269 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryuO0ViviZvFDzwdXM 359
+2024-01-31 22:54:13.272 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:54:13.295 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:54:13.297 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=mMBcWngz40p0AbCLtyxGaw - 200 null null 4790.4257ms
+2024-01-31 22:54:13.302 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:54:13.304 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 35.5678ms
+2024-01-31 22:59:26.579 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 22:59:26.791 +05:00 [INF] Now listening on: https://localhost:7051
+2024-01-31 22:59:26.792 +05:00 [INF] Now listening on: http://localhost:5167
+2024-01-31 22:59:26.796 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 22:59:26.797 +05:00 [INF] Hosting environment: Development
+2024-01-31 22:59:26.799 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-01-31 22:59:26.937 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-01-31 22:59:27.011 +05:00 [INF] Executing endpoint '/_Host'
+2024-01-31 22:59:27.024 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-01-31 22:59:27.031 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-01-31 22:59:27.032 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-01-31 22:59:27.144 +05:00 [INF] Executed page /_Host in 116.8627ms
+2024-01-31 22:59:27.146 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/ProductsPage.css - null null
+2024-01-31 22:59:27.146 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-01-31 22:59:27.146 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 22:59:27.147 +05:00 [INF] Executed endpoint '/_Host'
+2024-01-31 22:59:27.151 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-01-31 22:59:27.184 +05:00 [INF] Sending file. Request path: '/css/ProductsPage.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\ProductsPage.css'
+2024-01-31 22:59:27.185 +05:00 [INF] The file /_framework/blazor.server.js was not modified
+2024-01-31 22:59:27.185 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 39.0862ms
+2024-01-31 22:59:27.186 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-01-31 22:59:27.185 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/ProductsPage.css - 200 155 text/css 39.475ms
+2024-01-31 22:59:27.190 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 304 null text/javascript 44.2858ms
+2024-01-31 22:59:27.187 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-01-31 22:59:27.192 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 258.7494ms
+2024-01-31 22:59:27.216 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-01-31 22:59:27.218 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-01-31 22:59:27.221 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-01-31 22:59:27.222 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 6.5482ms
+2024-01-31 22:59:27.226 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.9523ms
+2024-01-31 22:59:27.226 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-01-31 22:59:27.228 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-01-31 22:59:27.233 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-01-31 22:59:27.234 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 7.8842ms
+2024-01-31 22:59:27.248 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=q6bReyLJWu4zboOLvJnWfQ - null null
+2024-01-31 22:59:27.249 +05:00 [INF] Executing endpoint '/_blazor'
+2024-01-31 22:59:28.883 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-01-31 22:59:40.078 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryuo7q0pISeALQSQIw 359
+2024-01-31 22:59:40.081 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-01-31 22:59:40.093 +05:00 [INF] Executed endpoint '/_blazor'
+2024-01-31 22:59:40.094 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=q6bReyLJWu4zboOLvJnWfQ - 200 null null 12846.5342ms
+2024-01-31 22:59:40.096 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-01-31 22:59:40.098 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 20.4464ms
+2024-03-13 18:07:04.287 +05:00 [INF] User profile is available. Using 'C:\Users\naumo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-13 18:07:05.040 +05:00 [INF] Now listening on: https://localhost:7051
+2024-03-13 18:07:05.043 +05:00 [INF] Now listening on: http://localhost:5167
+2024-03-13 18:07:05.046 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-13 18:07:05.048 +05:00 [INF] Hosting environment: Development
+2024-03-13 18:07:05.050 +05:00 [INF] Content root path: C:\Users\naumo\source\repos\BlazorShop\BlazorShop
+2024-03-13 18:07:08.392 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/ - null null
+2024-03-13 18:07:08.645 +05:00 [INF] Executing endpoint '/_Host'
+2024-03-13 18:07:08.707 +05:00 [INF] Route matched with {page = "/_Host"}. Executing page /_Host
+2024-03-13 18:07:08.730 +05:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-03-13 18:07:08.732 +05:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-03-13 18:07:09.020 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/site.css - null null
+2024-03-13 18:07:09.022 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/BlazorShop.styles.css - null null
+2024-03-13 18:07:09.020 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/bootstrap/bootstrap.min.css - null null
+2024-03-13 18:07:09.020 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/ProductsPage.css - null null
+2024-03-13 18:07:09.035 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - null null
+2024-03-13 18:07:09.062 +05:00 [INF] Executed page /_Host in 346.8106ms
+2024-03-13 18:07:09.043 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-13 18:07:09.113 +05:00 [INF] Executed endpoint '/_Host'
+2024-03-13 18:07:09.113 +05:00 [INF] Executing endpoint 'Blazor static files'
+2024-03-13 18:07:09.052 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-03-13 18:07:09.140 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13755 application/javascript; charset=utf-8 97.1145ms
+2024-03-13 18:07:09.122 +05:00 [INF] Sending file. Request path: '/BlazorShop.styles.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\obj\Debug\net8.0\scopedcss\bundle\BlazorShop.styles.css'
+2024-03-13 18:07:09.122 +05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\site.css'
+2024-03-13 18:07:09.148 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/ - 200 null text/html; charset=utf-8 766.7257ms
+2024-03-13 18:07:09.149 +05:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2024-03-13 18:07:09.154 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/open-iconic/font/css/open-iconic-bootstrap.min.css - null null
+2024-03-13 18:07:09.156 +05:00 [INF] Executed endpoint 'Blazor static files'
+2024-03-13 18:07:09.148 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/BlazorShop.styles.css - 200 3281 text/css 124.9741ms
+2024-03-13 18:07:09.162 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/blazor.server.js - 200 151995 text/javascript 126.283ms
+2024-03-13 18:07:09.149 +05:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\bootstrap\bootstrap.min.css'
+2024-03-13 18:07:09.149 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/site.css - 200 2978 text/css 129.8532ms
+2024-03-13 18:07:09.124 +05:00 [INF] Sending file. Request path: '/css/ProductsPage.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\ProductsPage.css'
+2024-03-13 18:07:09.163 +05:00 [INF] Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css'
+2024-03-13 18:07:09.168 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/bootstrap/bootstrap.min.css - 200 162720 text/css 147.9018ms
+2024-03-13 18:07:09.172 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/open-iconic/font/css/open-iconic-bootstrap.min.css - 200 9395 text/css 17.9989ms
+2024-03-13 18:07:09.171 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/ProductsPage.css - 200 155 text/css 151.7318ms
+2024-03-13 18:07:09.178 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_blazor/initializers - null null
+2024-03-13 18:07:09.184 +05:00 [INF] Executing endpoint 'Blazor initializers'
+2024-03-13 18:07:09.191 +05:00 [INF] Executed endpoint 'Blazor initializers'
+2024-03-13 18:07:09.193 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_blazor/initializers - 200 null application/json; charset=utf-8 15.1182ms
+2024-03-13 18:07:09.204 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/css/open-iconic/font/fonts/open-iconic.woff - null null
+2024-03-13 18:07:09.207 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-03-13 18:07:09.210 +05:00 [INF] Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\css\open-iconic\font\fonts\open-iconic.woff'
+2024-03-13 18:07:09.212 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/css/open-iconic/font/fonts/open-iconic.woff - 200 14984 application/font-woff 8.2652ms
+2024-03-13 18:07:09.212 +05:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-03-13 18:07:09.226 +05:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-03-13 18:07:09.227 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 20.3609ms
+2024-03-13 18:07:09.231 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7051/_blazor?id=h_NMOQroM1esI6qyHkUPfA - null null
+2024-03-13 18:07:09.233 +05:00 [INF] Executing endpoint '/_blazor'
+2024-03-13 18:07:09.277 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.631ms
+2024-03-13 18:07:09.295 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/favicon.png - null null
+2024-03-13 18:07:09.299 +05:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\favicon.png'
+2024-03-13 18:07:09.301 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/favicon.png - 200 1148 image/png 6.8388ms
+2024-03-13 18:07:18.774 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name", "p"."Price"
+FROM "Products" AS "p"
+2024-03-13 18:07:18.875 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7051/book.jpeg - null null
+2024-03-13 18:07:18.880 +05:00 [INF] Sending file. Request path: '/book.jpeg'. Physical path: 'C:\Users\naumo\source\repos\BlazorShop\BlazorShop\wwwroot\book.jpeg'
+2024-03-13 18:07:18.882 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7051/book.jpeg - 200 10844 image/jpeg 8.4033ms
+2024-03-13 18:07:33.134 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7051/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary5AfqGub7PP1PkOcW 359
+2024-03-13 18:07:33.141 +05:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-03-13 18:07:33.175 +05:00 [INF] Executed endpoint '/_blazor'
+2024-03-13 18:07:33.177 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7051/_blazor?id=h_NMOQroM1esI6qyHkUPfA - 200 null null 23945.7651ms
+2024-03-13 18:07:33.187 +05:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-03-13 18:07:33.188 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7051/_blazor/disconnect - 200 0 null 54.1554ms

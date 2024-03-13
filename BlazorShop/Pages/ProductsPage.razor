@@ -1,14 +1,21 @@
 ﻿@page "/products"
 @using BlazorShop.Models
 @using BlazorShop.Services
+<link rel="stylesheet" href="@(nameof(BlazorShop)).styles.css" />
 
 @inject ProductService Catalog
 
 <h3>Список товаров</h3>
+<div class="product-grid">
+	@foreach (var product in Catalog.GetProducts())
+	{
+		<div class="product-item">
+			<img src="./book.jpeg" style="width: 100px; height: 100px;" />
+			<p class="Text">
+				@product.Id: Наименование: "@product.Name"   Цена: @product.Price руб.
+			</p>
+		</div>
+	}
 
-@foreach (var product in Catalog.GetProducts())
-{
-	<p>
-		@product.Id: Наименование: "@product.Name"   Цена: @product.Price руб.
-	</p>
-}
+</div>
+
